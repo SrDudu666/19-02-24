@@ -1,6 +1,8 @@
+
 import logo from './logo.svg';
 import './App.css';
 import {exibirHorario} from './components/Horario';
+import {fazerLogin} from './components/Login';
 
 function App() {
   return (
@@ -19,8 +21,17 @@ function App() {
         >
           Learning React
         </a>
+        <br />
+        <input type="text" id={"txtLogin"} />
+        <br />
+        <input type="text" id={"txtSenha"} />
+        <br />
         <button
-        onClick={exibirHorario}
+          onClick={fazerLogin}
+        >Fazer Login</button>
+        <br />
+        <button
+          onClick={exibirHorario}
         >Ver Horário</button>
       </header>
     </div>
